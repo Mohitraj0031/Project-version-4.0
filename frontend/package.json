@@ -4,12 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "tailwind:watch": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+    "start": "concurrently \"npm run tailwind:watch\" \"npm run dev\"",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "concurrently": "^9.2.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.7.1"

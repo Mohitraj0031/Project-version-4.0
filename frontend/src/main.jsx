@@ -7,6 +7,7 @@ import Layout from './Layout.jsx'
 import Header from './components/Header/Header.jsx'
 import Contacts from './components/Contacts/Contacts.jsx'
 import Hero from './components/heroSection/Hero.jsx'
+import Orders from './components/Orders/Orders.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -20,6 +21,10 @@ const router = createBrowserRouter([{
     {
       path: "/Contacts",
       element: <Contacts/>
+    },
+    {
+      path: "/Orders",
+      element: <Orders/>
     }
   ]
 }])

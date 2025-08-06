@@ -17,7 +17,9 @@ const Navbar = () => {
             Products
           </li>
           <li className="hover:bg-purple-700 hover:text-white p-2 pl-6 pr-6 rounded-full">
-            Orders
+            <NavLink to="/Orders">
+              Orders
+            </NavLink>
           </li>
           <li className="hover:bg-purple-700 hover:text-white p-2 pl-6 pr-6 rounded-full">
             <NavLink to="/Contacts">
