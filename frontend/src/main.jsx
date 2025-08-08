@@ -8,6 +8,8 @@ import Header from './components/Header/Header.jsx'
 import Contacts from './components/Contacts/Contacts.jsx'
 import Hero from './components/heroSection/Hero.jsx'
 import Orders from './components/Orders/Orders.jsx'
+import Cart from './components/Add-to-cart/Cart.jsx'
+import PaymentGateway from './components/Payment-Gateway/PaymentGateway.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -25,6 +27,15 @@ const router = createBrowserRouter([{
     {
       path: "/Orders",
       element: <Orders/>
+    },
+    {
+      path: "/AddtoCart",
+      element:<Cart/>
+
+    },
+    {
+      path:"/PaymentGateway",
+      element:<PaymentGateway/>
     }
   ]
 }])

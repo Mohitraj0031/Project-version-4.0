@@ -3,11 +3,19 @@ const express = require("express")
 
 const app = express();
 
+
+
 app.use("/",(req, res, next) => {
-  console.log("Incoming Request first:", req.method, req.url);
-  res.send("<h1>Hello from Express!</h1>");
+  // console.log("Incoming Request first:", req.method, req.url);
+  res.send(`<h1>Hello from Express!</h1>
+    <a href="/add-products">View Products</a>`);
   next();
 });
+app.use("/add-products", (req, res, next) => {
+  res.send("<h1>Products</h1>")
+  next();
+}
+);
 
 const server = http.createServer(app);
 
